@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Enquiry Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="bot-icon">🎓</div>
+            <div>
+                <h1>College Assistant</h1>
+                <p><span class="status"></span> Online | Ready to help</p>
+            </div>
+        </header>
+
+        <main class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                Hello! 👋 Welcome to the College Enquiry Chatbot.
+                <br><br>
+                Ask me about admissions, courses, fees, exams, results or the library.
+            </div>
+        </main>
+
+        <div class="quick-questions">
+            <button onclick="quickAsk('Admission')">Admissions</button>
+            <button onclick="quickAsk('Courses')">Courses</button>
+            <button onclick="quickAsk('Fees')">Fees</button>
+            <button onclick="quickAsk('Exams')">Exams</button>
+        </div>
+
+        <form class="chat-input-area" id="chatForm">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your question..."
+                autocomplete="off"
+                required
+            >
+            <button type="submit" class="send-button">➤</button>
+        </form>
+
+        <footer>Powered by a Rule-Based Chatbot</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
